@@ -7,7 +7,7 @@ return {
   -- { "nvim-lualine/lualine.nvim", enabled = false },
   -- { "folke/noice.nvim", enabled = false },
   { "nvimdev/dashboard-nvim", enabled = false },
-  -- { "folke/persistence.nvim", enabled = false },
+  { "folke/persistence.nvim", enabled = false },
   { "nvim-pack/nvim-spectre", enabled = false },
-  -- { "windwp/nvim-ts-autotag", enabled = false },
+  { "windwp/nvim-ts-autotag", enabled = false },
 }
