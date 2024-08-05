@@ -9,15 +9,52 @@ return {
       },
     },
   },
-  --
-  -- { "ellisonleao/gruvbox.nvim", opts = {
-  --   transparent_mode = true,
-  -- } },
-  --
-  -- {
-  --   "LazyVim/LazyVim",
-  --   opts = {
-  --     colorscheme = "gruvbox",
-  --   },
-  -- },
+  {
+    "ellisonleao/gruvbox.nvim",
+    opts = {
+      transparent_mode = true,
+    },
+  },
+  {
+    "LazyVim/LazyVim",
+    opts = {
+      colorscheme = "gruvbox",
+    },
+  },
+  {
+    "lunarvim/synthwave84.nvim",
+    config = function()
+      require("synthwave84").setup({
+        glow = {
+          error_msg = true,
+          type2 = true,
+          func = true,
+          keyword = true,
+          operator = false,
+          buffer_current_target = true,
+          buffer_visible_target = true,
+          buffer_inactive_target = true,
+        },
+      })
+    end,
+  },
+  {
+    "EdenEast/nightfox.nvim",
+    config = function()
+      require("nightfox").setup({
+        options = {
+          transparent = true, -- Enable transparent background
+          terminal_colors = true, -- Set terminal colors
+          dim_inactive = false, -- Non focused panes set to alternative background
+          module_default = true, -- Default enable value for modules
+        },
+      })
+    end,
+  },
+  {
+    "LazyVim/LazyVim",
+    opts = {
+      colorscheme = "nightfox",
+    },
+  },
 }
