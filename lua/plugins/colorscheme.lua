@@ -16,12 +16,6 @@ return {
     },
   },
   {
-    "LazyVim/LazyVim",
-    opts = {
-      colorscheme = "gruvbox",
-    },
-  },
-  {
     "lunarvim/synthwave84.nvim",
     config = function()
       require("synthwave84").setup({
@@ -52,9 +46,17 @@ return {
     end,
   },
   {
+    "mistweaverco/retro-theme.nvim",
+    opts = {
+      italic_comments = true,
+      disable_cache = false,
+      hot_reload = false,
+    },
+  },
+  {
     "LazyVim/LazyVim",
     opts = {
-      colorscheme = "nightfox",
+      colorscheme = "nordfox",
     },
   },
 }
