@@ -4,5 +4,7 @@
 
 vim.keymap.set("n", "Q", "<nop>")
 
+vim.keymap.set("n", "-", "<CMD>Oil<CR>", { desc = "Open parent directory" })
+
 -- vim.keymap.set("n", "<C-d>", "<C-d>zz")
 -- vim.keymap.set("n", "<C-u>", "<C-u>zz")
